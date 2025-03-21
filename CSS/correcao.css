@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔵 NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007BFF;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 40px;
+}
+
+/* 🔷 BODY */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Evita sobreposição com a nav */
+}
+
+/* 🔷 TÍTULO */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🔷 FORMULÁRIO */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+/* Select */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🔷 CONTAINER DE PERGUNTAS/GABARITO */
+#gabarito-container, #perguntas-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Espaçamento entre as questões */
+    overflow-x: auto; /* Permite rolagem horizontal se precisar */
+    padding-bottom: 10px;
+}
+
+/* Cada questão */
+.questao {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre elementos da questão */
+    white-space: nowrap;
+    padding: 15px;
+    border-bottom: 2px solid #aaa; /* Linha mais visível */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Mais profundidade */
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Número da questão */
+.questao span {
+    font-weight: bold;
+    display: block; /* Faz com que os números fiquem um abaixo do outro */
+}
+
+/* Opções A, B, C, D */
+.opcoes {
+    display: flex;
+    gap: 20px; /* Espaçamento entre opções */
+    padding-left: 10px;
+    border-left: 2px solid #ccc; /* Linha de separação */
+}
+
+/* Inputs do gabarito */
+.questao input {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Profundidade nos inputs */
+}
+
+/* Efeito ao focar no input */
+.questao input:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}

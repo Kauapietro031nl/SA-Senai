@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz o body ocupar toda a altura da tela */
+    /* background-color: #0875b4b7; */
+}
+
+/* 🔵 NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #006cdf96;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 130px;
+    height: auto;
+}
+
+/* Estilo do formulário */
+.container {
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+    padding: 20px;
+    margin-top: 50px; /* Ajuste para a navbar fixa */
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: #006cdf96;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b70c2; /* Cor ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .formulario {
+        padding: 30px;
+    }
+
+    .formulario h3 {
+        font-size: 24px;
+    }
+
+    .campo label {
+        font-size: 16px;
+    }
+
+    .campo input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        width: 100px;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .formulario h3 {
+        font-size: 22px;
+    }
+
+    .campo label {
+        font-size: 14px;
+    }
+
+    .campo input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,104 @@
+body{
+    background-color: #0073e6;
+    margin: 0;
+    font-family:  Helvetica, sans-serif;
+}
+.navbar {
+    background-color: #004080;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+.container {
+    background-color: #0051e6;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid;
+    border-color: #10b3e4;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo do botão do formulário */
+.click-form {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #10b3e4, #068edd, #3a6f9b, #2c4e8a, #456d9e);
+    background-size: 250%;
+    background-position: left;
+    border: 1px solid;
+    color: #fffefb;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.click-form::before {
+    position: absolute;
+    color: #191717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 3s;
+    background-color: rgba(27, 26, 26, 0.842);
+    background-size: 200%;
+}
+
+.click-form:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.click-form:hover::before {
+    background-position: right;
+    transition-duration: 3s;
+}
+
+.click-form:active {
+    transform: scale(0.95);
+}
